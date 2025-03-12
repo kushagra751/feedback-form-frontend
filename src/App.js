@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import SubmitResponse from "./pages/SubmitResponse";
 import ViewResponses from "./pages/ViewResponses";
+import Analytics from "./pages/Analytics";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/create-form" element={<CreateForm />} />
         <Route path="/submit/:formId" element={<SubmitResponse />} />
         <Route path="/responses/:formId" element={<ViewResponses />} />
+        <Route path="/analytics/:formId" element={<Analytics />} />
       </Routes>
     </Router>
   );
