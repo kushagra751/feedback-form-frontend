@@ -3,6 +3,7 @@ import CreateForm from "./pages/CreateForm";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import SubmitResponse from "./pages/SubmitResponse";
+import ViewResponses from "./pages/ViewResponses";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/create-form" element={<CreateForm />} />
         <Route path="/submit/:formId" element={<SubmitResponse />} />
+        <Route path="/responses/:formId" element={<ViewResponses />} />
       </Routes>
     </Router>
   );
